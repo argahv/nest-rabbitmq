@@ -1,10 +1,12 @@
 {
-  "name": "@nest-queue/source",
-  "version": "0.0.0",
+  "name": "@argahvk/rabbitmq",
+  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "start:dev": "nx serve nest-queue --verbose",
-    "compodoc": "npx compodoc -p tsconfig.doc.json"
+    "compodoc": "npx compodoc -p tsconfig.doc.json",
+    "build:lib:rabbitmq": "nx build rabbitmq",
+    "publish:lib:rabbitmq": "npm run build:lib:rabbitmq && npm publish dist/libs/rabbitmq --access public"
   },
   "private": true,
   "dependencies": {
